@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="cursor fixed w-5 h-5 rounded-full bg-indigo-500 pointer-events-none mix-blend-difference z-50 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100"></div>
+    
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-40">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold text-indigo-600">PORTFOLIO</div>
+            <ul class="nav-links hidden md:flex space-x-8">
+                <li><a href="#home" class="text-gray-700 hover:text-indigo-600 font-medium relative group">Home<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium relative group">About<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium relative group">Skills<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium relative group">Experience<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium relative group">Projects<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium relative group">Contact<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span></a></li>
+            </ul>
+            <div class="burger md:hidden cursor-pointer">
+                <div class="line1 w-6 h-0.5 bg-gray-700 mb-1.5"></div>
+                <div class="line2 w-6 h-0.5 bg-gray-700 mb-1.5"></div>
+                <div class="line3 w-6 h-0.5 bg-gray-700"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero min-h-screen flex items-center justify-between px-6 py-24 md:py-32 bg-gradient-to-r from-indigo-100 to-purple-100">
+            <div class="hero-content max-w-lg">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Hi, I am <span class="text-indigo-600">Anoop S Prabhu</span></h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-6">AI & ML Developer</h2>
+                <p class="text-lg text-gray-500 mb-8">I Build train/Ml models with modern technologies and applications.</p>
+                <a href="#projects" class="inline-block px-8 py-3 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">View My Work</a>
+            </div>
+            <div class="hero-image w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://via.placeholder.com/400x400" alt="Profile Image" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <section id="about" class="about py-24 px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 relative">About Me<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-indigo-600 rounded"></span></h2>
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="about-image w-64 h-64 rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://via.placeholder.com/300x300" alt="About Me" class="w-full h-full object-cover">
+                </div>
+                <div class="about-text flex-1">
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">I'm a passionate frontend developer with 3 years of experience creating modern web applications. I specialize in React, JavaScript, and CSS animations.</p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new web technologies.</p>
+                    <div class="about-stats grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+                        <div class="stat-item text-center">
+                            <span class="block text-3xl font-bold text-indigo-600">50+</span>
+                            <span class="block text-gray-500">Projects</span>
+                        </div>
+                        <div class="stat-item text-center">
+                            <span class="block text-3xl font-bold text-indigo-600">20+</span>
+                            <span class="block text-gray-500">Clients</span>
+                        </div>
+                        <div class="stat-item text-center">
+                            <span class="block text-3xl font-bold text-indigo-600">3+</span>
+                            <span class="block text-gray-500">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills py-24 px-6 bg-gray-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 relative">My Skills<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-indigo-600 rounded"></span></h2>
+            <div class="container mx-auto grid md:grid-cols-2 gap-12">
+                <div class="skill-category">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Frontend</h3>
+                    <div class="skill-items space-y-6">
+                        <div class="skill-item" data-percent="90">
+                            <span class="block font-medium text-gray-700">HTML/CSS</span>
+                            <div class="skill-bar w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="skill-progress h-full bg-indigo-600 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <span class="block font-medium text-gray-700">JavaScript</span>
+                            <div class="skill-bar w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="skill-progress h-full bg-indigo-600 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <span class="block font-medium text-gray-700">React</span>
+                            <div class="skill-bar w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="skill-progress h-full bg-indigo-600 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Backend</h3>
+                    <div class="skill-items space-y-6">
+                        <div class="skill-item" data-percent="70">
+                            <span class="block font-medium text-gray-700">Node.js</span>
+                            <div class="skill-bar w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="skill-progress h-full bg-indigo-600 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="65">
+                            <span class="block font-medium text-gray-700">Express</span>
+                            <div class="skill-bar w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="skill-progress h-full bg-indigo-600 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="60">
+                            <span class="block font-medium text-gray-700">MongoDB</span>
+                            <div class="skill-bar w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="skill-progress h-full bg-indigo-600 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience py-24 px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 relative">Experience & Internships<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-indigo-600 rounded"></span></h2>
+            <div class="container mx-auto space-y-12">
+                <div class="experience-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800">Frontend Developer - TechCorp</h3>
+                    <p class="text-gray-500 mb-2">Jan 2023 - Present</p>
+                    <p class="text-gray-600">Developed and maintained responsive web applications using React and Tailwind CSS, improving user engagement by 30%.</p>
+                </div>
+                <div class="experience-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800">Web Development Intern - StartupX</h3>
+                    <p class="text-gray-500 mb-2">Jun 2022 - Dec 2022</p>
+                    <p class="text-gray-600">Assisted in building a scalable e-commerce platform, implementing UI components and optimizing performance.</p>
+                </div>
+                <div class="experience-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800">Junior Developer - WebFlow Agency</h3>
+                    <p class="text-gray-500 mb-2">Jan 2021 - May 2022</p>
+                    <p class="text-gray-600">Collaborated on client projects, focusing on CSS animations and JavaScript functionality for dynamic websites.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects py-24 px-6 bg-gray-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 relative">My Projects<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-indigo-600 rounded"></span></h2>
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="project-image w-full h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="project-info p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">E-commerce Website</h3>
+                        <p class="text-gray-600 mb-4">A fully responsive e-commerce platform built with React and Node.js.</p>
+                        <div class="project-tech flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">React</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">MongoDB</span>
+                        </div>
+                        <div class="project-links flex gap-4">
+                            <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800">Live Demo</a>
+                            <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="project-image w-full h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="project-info p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Portfolio Template</h3>
+                        <p class="text-gray-600 mb-4">A customizable portfolio template with smooth animations.</p>
+                        <div class="project-tech flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">GSAP</span>
+                        </div>
+                        <div class="project-links flex gap-4">
+                            <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800">Live Demo</a>
+                            <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="project-image w-full h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="project-info p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">A productivity app for managing tasks with drag and drop functionality.</p>
+                        <div class="project-tech flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">React</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">Material UI</span>
+                        </div>
+                        <div class="project-links flex gap-4">
+                            <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800">Live Demo</a>
+                            <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact py-24 px-6 bg-gray-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 relative">Get In Touch<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-indigo-600 rounded"></span></h2>
+            <div class="container mx-auto flex flex-col md:flex-row gap-12">
+                <div class="contact-info flex-1">
+                    <h3 class="text-xl font-semibold mb-8 text-gray-800">Contact Information</h3>
+                    <div class="info-item flex items-center mb-6">
+                        <i class="fas fa-envelope text-indigo-600 text-xl mr-4"></i>
+                        <span class="text-gray-600">john.doe@example.com</span>
+                    </div>
+                    <div class="info-item flex items-center mb-6">
+                        <i class="fas fa-phone text-indigo-600 text-xl mr-4"></i>
+                        <span class="text-gray-600">+1 (123) 456-7890</span>
+                    </div>
+                    <div class="info-item flex items-center mb-6">
+                        <i class="fas fa-map-marker-alt text-indigo-600 text-xl mr-4"></i>
+                        <span class="text-gray-600">San Francisco, CA</span>
+                    </div>
+                    <div class="social-links flex gap-4 mt-8">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300"><i class="fab fa-github"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form flex-1 space-y-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600 transition-colors duration-300">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600 transition-colors duration-300">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600 transition-colors duration-300">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600 transition-colors duration-300 min-h-[150px] resize-y"></textarea>
+                    </div>
+                    <button type="submit" class="px-8 py-3 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="footer-logo text-2xl font-bold mb-6">PORTFOLIO</div>
+            <div class="footer-links flex gap-8 mb-6">
+                <a href="#home" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Skills</a>
+                <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Experience</a>
+                <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Contact</a>
+            </div>
+            <div class="footer-copyright text-gray-400 text-sm">© 2023 John Doe. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
